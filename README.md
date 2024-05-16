@@ -2,9 +2,6 @@
 
 ![Imgur](http://i.imgur.com/3MAGabc.jpg)
 
-### [Try the Demo!](https://prolearner.github.io/procedural-planet/)
-To display the Procedural Planet open index.html in a Web browser as Firefox/Chrome/Edge...
-
 ### main.js
 Main javascript file in which there are the parameters' definitions and the initialization of the WebGL environment.
 
