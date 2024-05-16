@@ -1,10 +1,10 @@
 /* PARAMETERS */
 var n = 7;
 var dim = Math.pow(2, n) + 1; // detail of the spheres
-var radius = 100; // terrain and water sphere radius
+var radius = 1000; // terrain and water sphere radius
 
 // terrain parameters
-var roughness = 0.1*radius;
+var roughness = 0.01*radius;
 
 // Perlin/Simplex/Ridged parameters
 var seed = Math.random()*100;
