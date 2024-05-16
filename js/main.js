@@ -58,8 +58,8 @@ sky.material.side = THREE.BackSide;
 scene.add(sky);
 
 //Atmosphere Shader
-var atm = new THREE.Mesh(new THREE.SphereGeometry(radius+roughness+1, dim-1, dim-1), getCustomMaterial(directionalLight,"img/gradient.jpg", document.getElementById('atm_fragmentShader').innerHTML));
-atm.material.side = THREE.BackSide;
+//var atm = new THREE.Mesh(new THREE.SphereGeometry(radius+roughness+1, dim-1, dim-1), getCustomMaterial(directionalLight,"img/gradient.jpg", document.getElementById('atm_fragmentShader').innerHTML));
+//atm.material.side = THREE.BackSide;
 
 //Clouds Shader
 //var clouds_geometry = new THREE.BoxGeometry(5, 5, 5, dim-1, dim-1, dim-1);
@@ -125,7 +125,7 @@ if(CLOD){
 
 mesh.add( cloudsMesh ); //clouds
 mesh.add( waterMesh ); //water
-mesh.add(atm); //atmosphere
+//mesh.add(atm); //atmosphere
 
 scene.add(mesh);
 
@@ -134,8 +134,8 @@ scene.add(mesh);
 function animate() {
     //waterMesh.rotation.z += 0.001;
     requestAnimationFrame(animate);
-    waterMesh.material.uniforms.time.value += 0.01 / 60.0;
-    cloudsMesh.material.uniforms.time.value += 0.01 / 60.0;
+    //waterMesh.material.uniforms.time.value += 0.01 / 60.0;
+    cloudsMesh.material.uniforms.time.value += 0.001 / 60.0;
     //controls.speedMult = Math.min(1,Math.max(0.01,(camera.position.length()- radius)/(1*radius)));
 
     if(CLOD)quadSphere.draw(camera);
@@ -144,7 +144,7 @@ function animate() {
 
     mesh.material.uniforms.lightPosition.value = directionalLight.position;
     cloudsMesh.material.uniforms.lightPosition.value = directionalLight.position;
-    waterMesh.material.uniforms.lightPosition.value = directionalLight.position;
+    //waterMesh.material.uniforms.lightPosition.value = directionalLight.position;
     controls.update();
     //water.render();
     renderer.render(scene, camera);
