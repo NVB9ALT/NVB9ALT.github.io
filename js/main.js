@@ -125,7 +125,7 @@ if(CLOD){
 
 mesh.add( cloudsMesh ); //clouds
 mesh.add( waterMesh ); //water
-//mesh.add(atm); //atmosphere
+mesh.add(atm); //atmosphere
 
 scene.add(mesh);
 
