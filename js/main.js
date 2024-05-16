@@ -13,7 +13,7 @@ var scale = 0.5; // resolution in the slides
 var lacunarity = 2.0;
 var cliff = [0.52, 1.0];
 
-var rotationSpeed = 0.0001; // planet rotation speed.
+var rotationSpeed = 0; //0.0001; // planet rotation speed.
 
 var DSQUARE = false; // diamond square algorithm, not implemented for CLOD
 
