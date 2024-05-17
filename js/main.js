@@ -44,7 +44,7 @@ controls.keys = {
    LEFT: 65,
    UP: 87,
    RIGHT: 68,
-   DOWN: 83
+   BOTTOM: 83
 };
 
 //Lights
