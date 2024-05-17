@@ -40,6 +40,12 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 var scene = new THREE.Scene();
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.keys = {
+   LEFT: 65,
+   UP: 87,
+   RIGHT: 68,
+   DOWN: 83
+};
 
 //Lights
 //scene.add( new THREE.AmbientLight( 0x444444 ) );
