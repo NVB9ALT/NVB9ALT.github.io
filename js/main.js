@@ -42,9 +42,9 @@ var scene = new THREE.Scene();
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.keys = {
    LEFT: 65,
-   UP: 87,
+   UP: 82,
    RIGHT: 68,
-   BOTTOM: 83
+   BOTTOM: 67
 };
 
 //Lights
