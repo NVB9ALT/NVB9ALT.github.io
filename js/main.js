@@ -19,7 +19,7 @@ var DSQUARE = false; // diamond square algorithm, not implemented for CLOD
 
 //CLOD parameters
 var CLOD = true; //Chunked Level of detail, overrides DSQUARE
-var QTGPU = false; //vertex displacement in GPU for CLOD
+var QTGPU = true; //vertex displacement in GPU for CLOD
 var GNORMALS = false; // only with CLOD in CPU (QTGPU=false) and with simplex noise non ridged
 
 
