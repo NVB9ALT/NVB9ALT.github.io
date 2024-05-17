@@ -87,10 +87,10 @@ else if(!DSQUARE){
   //Spherify(geometry, radius);
 
   //Icosahedral Geometry
-  geometry = new THREE.IcosahedronGeometry(radius, n);
+  //geometry = new THREE.IcosahedronGeometry(radius, n);
 
   //Sphere Geometry
-  //geometry = new THREE.SphereGeometry(radius, dim-1,dim-1);
+  geometry = new THREE.SphereGeometry(radius, dim-1,dim-1);
 
   //Perlin Noise Sphere
   //var terrains = generateCubeMaps(new THREE.Vector3(0.5,0.0,0.0), dim, 1.0, smoothness);
