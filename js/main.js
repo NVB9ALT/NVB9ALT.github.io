@@ -69,7 +69,7 @@ scene.add(sky);
 
 //Clouds Shader
 //var clouds_geometry = new THREE.BoxGeometry(5, 5, 5, dim-1, dim-1, dim-1);
-var clouds_geometry = new THREE.SphereGeometry(radius+roughness, dim-1, dim-1);
+var clouds_geometry = new THREE.SphereGeometry(radius+(roughness*0.5), dim-1, dim-1);
 var cloudsArray = getCloudsMaterial(directionalLight);
 //backside
 cloudsMeshFront = new THREE.Mesh(clouds_geometry, cloudsArray[0]);
