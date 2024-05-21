@@ -1,7 +1,7 @@
 /* PARAMETERS */
 var n = 7;
 var dim = Math.pow(2, n) + 1; // detail of the spheres
-var radius = 989; // terrain and water sphere radius, radius of object in miles divided by 4 (Earth as default)
+var radius = 3900; // terrain and water sphere radius, radius of object in miles (Earth as default)
 
 // terrain parameters
 var roughness = 0.01*radius;
