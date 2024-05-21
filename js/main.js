@@ -9,7 +9,7 @@ var roughness = 0.01*radius;
 // Perlin/Simplex/Ridged parameters
 var seed = Math.random()*100;
 var smoothness = 1.8;
-var scale = 0.5; // resolution in the slides
+var scale = 0.25; // resolution in the slides
 var lacunarity = 2.0;
 var cliff = [0.52, 1.0];
 
