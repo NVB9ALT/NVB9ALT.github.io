@@ -23,14 +23,10 @@
    </section><br>
    <section id="list">
    <form id="selectForm" action="formhandler.js">
-      <button class="tablinks" id="aircraftListing" type="button" onclick="openTab(event, 'aircraft')>
-   <input type="radio" id="aircraft_listing" name="button" value="aircraft_select">
-   <label for="aircraftSel">Addon aircraft (old method)</label>
-      </button><br>
-      <button class="tablinks" id="aircraftFixes" type="button" onclick="openTab(event, 'acfixes')>
-   <input type="radio" id="aircraft_fixes" name="button" value="acfixes_select">
-   <label for="aircraft_fixes">Aircraft fixes for official and CC aircraft</label>
-      </button><br>
+      <input type="radio" id="aircraft_listing" name="button" value="aircraft_select">
+      <label for="aircraftSel">Addon aircraft (old method) <button class="tablinks" id="aircraftListing" type="button" onclick="openTab(event, 'aircraft')></button></label><br>
+      <input type="radio" id="aircraft_fixes" name="button" value="acfixes_select">
+      <label for="aircraft_fixes">Aircraft fixes for official and CC aircraft <button class="tablinks" id="aircraftFixes" type="button" onclick="openTab(event, 'acfixes')></button></label><br>
    </form>
    </section>
 </body>
