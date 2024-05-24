@@ -22,7 +22,7 @@
    <ul>
       <li>Select the addons you want to use. Clicking on a listing will show a window with details on the addon.</li>
       <li>Press "Enter". If a popup tells you that certain addons have dependencies, add to your selection the addons indicated as dependencies and try again.</li>
-      <li>You will be provided with a Tampermonkey userscript and a bookmarklet that contain your selected addons. YouTube tutorials for both are linked.</li>
+      <li>The site will use your selections to produce a Tampermonkey userscript and a bookmarklet that contain your selected addons. YouTube tutorials for both are linked.</li>
    </ul>
    </section><br>
    <section id="addonlist">
@@ -30,7 +30,8 @@
    <input type="checkbox" id="addon_aircraft" name="button" value="addonaircraft">
    <button class="tablinks" id="addonaircraftbutton" type="button" onclick="openTab(event, 'addonAircraft')">
       <span>Addon aircraft (OLD METHOD)</span>
-   </button>
+   </button><br>
+   <button id="formButton" type="button" onclick="fetchResources()">Enter</button>
       </form>
    </section>
 </body>
