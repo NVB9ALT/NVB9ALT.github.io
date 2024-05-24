@@ -23,8 +23,13 @@
       <li>You will be provided with a Tampermonkey userscript and a bookmarklet that contain your selected addons. YouTube tutorials for both are linked.</li>
    </ul>
    </section><br>
-   <section id="testbox">
-      <p>Lorum ipsum haha</p>
+   <section id="addonlist">
+      <form id="selectForm" action="formhandler.js">
+   <input type="checkbox" id="addon_aircraft" name="button" value="addonaircraft">
+   <button class="tablinks" id="addonaircraftbutton" type="button" onclick="openTab(event, 'addonAircraft')">
+      <p>Addon aircraft (OLD METHOD)</p>
+   </button>
+      </form>
    </section>
 </body>
 </html>
