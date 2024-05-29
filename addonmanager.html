@@ -9,8 +9,9 @@
 	span {font-family: "Oswald Regular 400", Oswald, monospace; font-size: 15px}
 	h1 {font-family: "Oswald Regular 400", Oswald, monospace; font-size: 30px}
 	li {font-family: "Oswald Regular 400", Oswald, monospace; font-size: 15px}
-	button {width: 65%}
-	#formButton {width: 20%}
+	button {width: 65%; transform: scale(2)}
+	#formButton {width: 20%; transform: scale(2)}
+	input.selectCheckbox {transform: scale(2)}
 	</style>
 </head>
 <body>
@@ -28,7 +29,7 @@
    </section><br>
    <section id="addonlist">
       <form id="selectForm" action="formhandler.js">
-   <input type="checkbox" id="addon_aircraft" name="button" value="addonaircraft">
+   <input type="checkbox" class="selectCheckbox" id="addon_aircraft" name="button" value="addonaircraft">
    <button class="tablinks" id="addonaircraftbutton" type="button" onclick="openTab(event, 'addonAircraft')">
       <span>Addon aircraft (OLD METHOD)</span>
    </button><br>
