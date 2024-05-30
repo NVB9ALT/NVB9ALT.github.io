@@ -30,15 +30,107 @@
       <form id="selectForm" action="formhandler.js">
    <input type="checkbox" id="addon_aircraft" name="button" value="addonaircraft">
    <button class="tablinks" id="addonaircraftbutton" type="button" onclick="openTab(event, 'addonAircraft')">
-      <span>Addon aircraft (OLD METHOD)</span>
+      <span>Addon Aircraft (OLD METHOD)</span>
    </button><br>
    <input type="checkbox" id="aircraft_fixes" name="button" value="aircraftfixes">
    <button class="tablinks" id="aircraftfixesbutton" type="button" onclick="openTab(event, 'aircraftFixes')">
-      <span>Aircraft physics fixes</span>
+      <span>APF: Aircraft Physics Fixes||DEVNOTE: Highly recommended to use FBW Controls for Fighter Jets</span>
    </button><br>
    <input type="checkbox" id="aircraft_improvements" name="button" value="aircraftimprovements">
    <button class="tablinks" id="aircraftimprovementsbutton" type="button" onclick="openTab(event, 'aircraftImprovements')">
-      <span>Questionably realistic aircraft buffs/improvements</span>
+      <span>QRAB: Questionably Realistic Aircraft Buffs</span>
+   </button><br>
+   <input type="checkbox" id="better_hud" name="button" value="betterhud">
+   <button class="tablinks" id="betterhudbutton" type="button" onclick="openTab(event, 'betterHud')">
+      <span>New-Style HUD Improvements</span>
+   </button><br>
+   <input type="checkbox" id="carrier_cats" name="button" value="carriercats">
+   <button class="tablinks" id="carriercatsbutton" type="button" onclick="openTab(event, 'carrierCats')">
+      <span>Carrier Catapults</span>
+   </button><br>
+   <input type="checkbox" id="clickable_cockpits" name="button" value="clickablecockpits">
+   <button class="tablinks" id="clickablecockpitsbutton" type="button" onclick="openTab(event, 'clickableCockpits')">
+      <span>Rudimentary Clickable Cockpits</span>
+   </button><br>
+   <input type="checkbox" id="cockpit_sounds" name="button" value="cockpitsounds">
+   <button class="tablinks" id="cockpitsoundsbutton" type="button" onclick="openTab(event, 'cockpitSounds')">
+      <span>CISE: Cockpit Immersion Sound Effects</span>
+   </button><br>
+   <input type="checkbox" id="condensation_effects" name="button" value="condensationeffects">
+   <button class="tablinks" id="condensationeffectsbutton" type="button" onclick="openTab(event, 'condensationEffects')">
+      <span>ACE: Aircraft Condensation Effects||DEVNOTE: Include both condensation addons</span>
+   </button><br>
+   <input type="checkbox" id="bookmarklet_console" name="button" value="bookmarkletconsole">
+   <button class="tablinks" id="consolebutton" type="button" onclick="openTab(event, 'console')">
+      <span>Console Utility (for developers and debugging)</span>
+   </button><br>
+   <input type="checkbox" id="denser_clouds" name="button" value="denserclouds">
+   <button class="tablinks" id="densercloudsbutton" type="button" onclick="openTab(event, 'denserClouds')">
+      <span>Denser Billboard Clouds</span>
+   </button><br>
+   <input type="checkbox" id="engine_sounds" name="button" value="enginesounds">
+   <button class="tablinks" id="enginesoundsbutton" type="button" onclick="openTab(event, 'engineSounds')">
+      <span>GeoFS Engine Sound Improvements (plus sonic booms!)</span>
+   </button><br>
+   <input type="checkbox" id="fighter_fbw" name="button" value="fighterfbw">
+   <button class="tablinks" id="fighterfbwbutton" type="button" onclick="openTab(event, 'fighterFBW')">
+      <span>Fly-By-Wire Controls for Fighter Jets</span>
+   </button><br>
+   <input type="checkbox" id="ejection_seats" name="button" value="ejectionseats">
+   <button class="tablinks" id="ejectionseatsbutton" type="button" onclick="openTab(event, 'ejectionSeats')">
+      <span>Fighter Jet Ejection Seats</span>
+   </button><br>
+   <input type="checkbox" id="autospoilers_kolos" name="button" value="autospoilerskolos">
+   <button class="tablinks" id="autospoilerskolosbutton" type="button" onclick="openTab(event, 'autospoilersKolos')">
+      <span>Spoiler Arming</span>
+   </button><br>
+   <input type="checkbox" id="livery_selector" name="button" value="liveryselector">
+   <button class="tablinks" id="liveryselectorbutton" type="button" onclick="openTab(event, 'liverySelector')">
+      <span>Livery Selector</span>
+   </button><br>
+   <input type="checkbox" id="cam_lookback" name="button" value="camlookback">
+   <button class="tablinks" id="camlookbackbutton" type="button" onclick="openTab(event, 'camLookback')">
+      <span>Camera Head Movement</span>
+   </button><br>
+   <input type="checkbox" id="multiplayer_sounds" name="button" value="multiplayersounds">
+   <button class="tablinks" id="multiplayersoundsbutton" type="button" onclick="openTab(event, 'multiplayerSounds')">
+      <span>Multiplayer Aircraft Sounds (Incomplete, and very loud)</span>
+   </button><br>
+   <input type="checkbox" id="overg_blackout" name="button" value="overgblackout">
+   <button class="tablinks" id="overgblackoutbutton" type="button" onclick="openTab(event, 'overgBlackout')">
+      <span>Over-G Blackout</span>
+   </button><br>
+   <input type="checkbox" id="overlay_remover" name="button" value="overlayremover">
+   <button class="tablinks" id="overlayremoverbutton" type="button" onclick="openTab(event, 'overlayRemover')">
+      <span>Runway Overlays Remover</span>
+   </button><br>
+   <input type="checkbox" id="prop_wash" name="button" value="propwash">
+   <button class="tablinks" id="propwashbutton" type="button" onclick="openTab(event, 'propWash')">
+      <span>Propwash</span>
+   </button><br>
+   <input type="checkbox" id="realistic_kias" name="button" value="realistickias">
+   <button class="tablinks" id="realistickiasbutton" type="button" onclick="openTab(event, 'realisticKias')">
+      <span>Realistic KIAS Measurements</span>
+   </button><br>
+   <input type="checkbox" id="spin_fixer" name="button" value="spinfixer">
+   <button class="tablinks" id="spinfixerbutton" type="button" onclick="openTab(event, 'spinFixer')">
+      <span>Glitched Spin Fixer</span>
+   </button><br>
+   <input type="checkbox" id="spool_time" name="button" value="spooltime">
+   <button class="tablinks" id="spooltimebutton" type="button" onclick="openTab(event, 'spoolTime')">
+      <span>JEST: Jet Engine Spool Time</span>
+   </button><br>
+   <input type="checkbox" id="ssr_shaders" name="button" value="ssrshaders">
+   <button class="tablinks" id="ssrshadersbutton" type="button" onclick="openTab(event, 'ssrShaders')">
+      <span>Screen Space Reflection Shaders</span>
+   </button><br>
+   <input type="checkbox" id="stall_shake" name="button" value="stallshake">
+   <button class="tablinks" id="stallshakebutton" type="button" onclick="openTab(event, 'stallShake')">
+      <span>Stall Buffet Camera Shake</span>
+   </button><br>
+   <input type="checkbox" id="wing_flex" name="button" value="wingflex">
+   <button class="tablinks" id="wingflexbutton" type="button" onclick="openTab(event, 'wingFlex')">
+      <span>Realisting Wingflex</span>
    </button><br>
 <p></p><br>
    <button id="formButton" type="button" onclick="fetchResources()"><span>Enter</span></button>
