@@ -15,6 +15,26 @@
 	#tablist {display: inline-block; width: 45%}
 	#addonList {display: inline}
 	</style>
+	<script>
+	//Tab manager:
+function openTab(evt, tabname) {
+  var i, tabcontent, tablinks;
+
+  //hide all the content except the one selected
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  //make sure that the stuff that IS selected is shown
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+};
+	</script>
 </head>
 <body>
    <p>Work in progress.</p><br>
